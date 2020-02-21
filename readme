@@ -1,4 +1,5 @@
 注册中心
-1.File ->New Project ->Spring Initializr ->Spring Cloud Discovery -> Eureka Server
+1.File ->New Project ->Spring Initializr ->
+        Spring Cloud Discovery -> Eureka Server
 2.application.yml
 3.启动类添加@EnableEurekaServer注解，开启eurekaSever
