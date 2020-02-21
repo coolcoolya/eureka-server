@@ -1,0 +1,16 @@
+#注册中心端口号
+server:
+  port: 8100
+#注册中心名称
+eureka:
+  instance:
+    hostname: server
+#客户端注册到注册中心的地址
+  client:
+    service-url:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+#因为该应用为注册中心，不会注册自己
+    register-with-eureka: false
+#因为自己是注册中心，不会在该应用中检测服务
+    fetch-registry: false
+
